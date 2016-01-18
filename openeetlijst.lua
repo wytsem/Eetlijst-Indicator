@@ -18,6 +18,7 @@ conn:on("receive", function(conn, payload)
 index = string.find(payload,"<tr>") 
 tmr.stop(2)
 if index == nil then
+    ws2812.writergb(4, string.char(0, 0, 0):rep(4))
     tmr.alarm(2, 500, 1, function ()
         ws2812.writergb(4, string.char(255, 0, 0))
         tmr.delay(100000)
