@@ -50,7 +50,7 @@ enable flashing yourself by pulling GPIO0 low or pressing a "flash" switch.
 
 ## Files to burn to the flash
 
-Flash the .bin file onto your ESP8266 module
+Flash the .bin file onto your ESP8266 module, you can flash that file directly to address 0x00000.
 
 # Connecting to your NodeMCU device
 
@@ -64,10 +64,11 @@ If the device panics and resets at any time, errors will be written to the seria
 
 Victor Brutskiy's [ESPlorer](https://github.com/4refr0nt/ESPlorer) is written in Java, is open source and runs on most platforms such as Linux, Windows, Mac OS, etc.
 
-With the Esplorer you can upload all the other files on your ESP8266.
+With the Esplorer you can upload the lua, html, txt, and css files on your ESP8266.
 
 # Use of the Eetlijst indicator
 
+When you have uploaded the files to your ESP8266 you can power it up.
 
 - Connect a WS2812b ledstrip to GPIO2 (pin4) of the ESP8266, the amount of leds is dependend on the number of people in the eetlijst group you have.
 - When power is applied the first led should light up red, a acces point is created (ESP.....).
