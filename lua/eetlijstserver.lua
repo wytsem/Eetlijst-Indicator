@@ -8,10 +8,10 @@ conn:on("receive", function(client,payload)
  tgtfile = string.sub(payload,string.find(payload,"GET /")+5,string.find(payload,"HTTP/")-2)
  print(tgtfile)
  if string.match(tgtfile, 'eetlogin', 0) then
- login = string.sub(tgtfile,string.find(tgtfile,"eetlogin=")+9,string.find(tgtfile,"&eetpw")-1)
- eetpw = string.sub(tgtfile,string.find(tgtfile,"eetpw=")+6) 
+    login = string.sub(tgtfile,string.find(tgtfile,"eetlogin=")+9,string.find(tgtfile,"&eetpw")-1)
+    eetpw = string.sub(tgtfile,string.find(tgtfile,"eetpw=")+6) 
     local f = file.open("fileloc.txt", "w+")
-    file.writeline(login.."-"..eetpw)
+        file.writeline(login.."-"..eetpw)
     file.close()
     tgtfile = "doneeetlijst.html"
     f = file.open(tgtfile,"r")
@@ -22,9 +22,11 @@ conn:on("receive", function(client,payload)
     print('client close') 
     client:close();
     print('client closed') 
-    collectgarbage();
     f = nil
     tgtfile = nil 
+    login = nil
+    eetpw = nil
+    collectgarbage();
 
     dofile("openeetlijst.lua")
  
@@ -45,10 +47,12 @@ conn:on("receive", function(client,payload)
     end
     print('client close 2') 
     client:close();
-    collectgarbage();
     f = nil
     tgtfile = nil
+    collectgarbage();
  end
+ payload = nil
+ collectgarbage();
  tmr.alarm(1, 300000, 1, function ()
     dofile("openeetlijst.lua")
  end)
