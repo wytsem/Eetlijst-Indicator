@@ -3,6 +3,7 @@ print('run server')
 dofile("onboardserver.lua")
 end
 
+uart.setup(0,115200,8,0,1,1)
 
 print('wif mode')
 print(wifi.getmode())
