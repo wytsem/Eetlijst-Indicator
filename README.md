@@ -6,7 +6,7 @@ ESP8266 based indicator for a popular dutch site eetlijst.nl to see who is going
 # Summary
 
 - Firmware with build-in WS2812 module
-- Acces point to login onto your wifi and fill in your Eetlijst.nl credentials
+- Acces point to login and your fill in your wifi and Eetlijst.nl credentials
 - Acceses Eetlijst through mobile page for day by day indication
 - Leds corresponts with name from Eetlijst.nl from left to right
 
