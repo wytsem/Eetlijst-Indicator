@@ -1,6 +1,7 @@
 # Eetlijst-Indicator
 ESP8266 based indicator for a popular dutch site eetlijst.nl to see who is going to cook, eat, or will not be at dinner.
 
+![Schematic](username.github.com/Eetlijst-Indicator/Schematic.png)
 
 # Summary
 
