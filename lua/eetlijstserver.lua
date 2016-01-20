@@ -52,7 +52,6 @@ conn:on("receive", function(client,payload)
     collectgarbage();
  end
  payload = nil
- client = nil
  collectgarbage();
  tmr.alarm(1, 300000, 1, function ()
     dofile("openeetlijst.lua")
