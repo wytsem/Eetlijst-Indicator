@@ -49,6 +49,8 @@ low by asserting DTR, and reset your board by asserting RTS.
 If you have an ESP-01 or other device without inbuilt USB, you will need to
 enable flashing yourself by pulling GPIO0 low or pressing a "flash" switch.
 
+![Schematic Flash](https://github.com/wytsem/Eetlijst-Indicator/blob/master/Schematic_flash.png)
+
 ## Files to burn to the flash
 
 Flash the .bin file onto your ESP8266 module, you can flash that file directly to address 0x00000.
