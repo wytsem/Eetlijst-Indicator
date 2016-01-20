@@ -29,33 +29,32 @@ conn:on("receive", function(client,payload)
     collectgarbage();
 
     dofile("openeetlijst.lua")
- 
  else
- if tgtfile == "" then tgtfile = "eetlijst.html" end 
-    print('file')
-    print(tgtfile) 
-    local f = file.open(tgtfile,"r")
+	if tgtfile == "" then tgtfile = "eetlijst.html" end 
+		print('file')
+		print(tgtfile) 
+		local f = file.open(tgtfile,"r")
  
-    if f ~= nil then
-        print('client send 2') 
-        client:send(file.read())
-        file.close()
-    else
-        print('conn send 2') 
-        conn:send("HTTP/1.1 404 file not found")
-        return
-    end
-    print('client close 2') 
-    client:close();
-    f = nil
-    tgtfile = nil
-    collectgarbage();
- end
- payload = nil
- collectgarbage();
- tmr.alarm(1, 300000, 1, function ()
-    dofile("openeetlijst.lua")
- end)
+		if f ~= nil then
+			print('client send 2') 
+			client:send(file.read())
+			file.close()
+		else
+			print('conn send 2') 
+			conn:send("HTTP/1.1 404 file not found")
+			return
+		end
+		print('client close 2') 
+		client:close();
+		f = nil
+		tgtfile = nil
+		collectgarbage();
+	end
+	payload = nil
+	collectgarbage();
+	tmr.alarm(1, 300000, 1, function ()
+		dofile("openeetlijst.lua")
+	end)
  end)
 end)
 
