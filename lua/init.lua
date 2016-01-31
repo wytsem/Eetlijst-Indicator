@@ -19,10 +19,9 @@ tmr.alarm(1,1000, 1, function()
         print('onboard server to request WIFI details in 3 secs')
         ipfail = true
         tmr.stop(1) 
-        if(wifi.getmode() ~= 3) then
-            print('changing wifi mode to station')
-            wifi.setmode(wifi.STATIONAP);
-        end
+        print('changing wifi mode to station')
+        wifi.setmode(wifi.STATIONAP) 
+        wifi.ap.config({ssid='Eetlijst 192.168.4.1'})
         tmr.alarm(0,3000,0,onboardserver)
     else
         count = count + 1 
@@ -31,7 +30,7 @@ tmr.alarm(1,1000, 1, function()
     print(wifi.sta.getip())
     if(wifi.getmode() ~= 1) then
         print('changing wifi mode to station only')
-        wifi.setmode(wifi.STATION);
+        wifi.setmode(wifi.STATION)
     end
     tmr.stop(0) 
     count = nil
