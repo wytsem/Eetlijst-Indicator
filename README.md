@@ -65,7 +65,7 @@ If the device panics and resets at any time, errors will be written to the seria
 
 Victor Brutskiy's [ESPlorer](https://github.com/4refr0nt/ESPlorer) is written in Java, is open source and runs on most platforms such as Linux, Windows, Mac OS, etc.
 
-With the Esplorer you can upload the lua, html, txt, and css files on your ESP8266. Don't forget the fileloc.txt, this is the file where your eetlijst crendentials are stored.
+With the Esplorer you can upload the lua, html, and css files on your ESP8266. 
 
 # Use of the Eetlijst indicator
 
