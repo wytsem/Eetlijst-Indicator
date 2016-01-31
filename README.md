@@ -72,7 +72,7 @@ With the Esplorer you can upload the lua, html, and css files on your ESP8266.
 When you have uploaded the files to your ESP8266 you can power it up.
 
 - Connect a WS2812b ledstrip to GPIO2 (pin4) of the ESP8266, the amount of leds is dependend on the number of people in the eetlijst group you have.
-- When power is applied the first led should light up red, a acces point is created (ESP.....).
+- When power is applied the first led should light up red, a acces point is created (Eetlijst 192.168.4.1).
 - Connect to the acces point and go to 192.168.4.1 if this doesn't work try reset the ESP8266 or a new tab in your browser
 - Fill in all your credentials and click on connect
 - The leds should now light up corresponding with your eetlijst account
