@@ -1,6 +1,8 @@
 # Eetlijst-Indicator
 ESP8266 based indicator for a popular dutch site eetlijst.nl to see who is going to cook, eat, or will not be at dinner.
 
+![Final](https://github.com/wytsem/Eetlijst-Indicator/blob/master/Pictures/EetlijstIndicator.jpg)
+
 # Summary
 
 - Firmware with build-in WS2812 module
@@ -80,6 +82,10 @@ When you have uploaded the files to your ESP8266 you can power it up.
 When you want to change your eetlijst credentials look up the ip adress of the ESP8266 module, you can find it in your router, and put the IP adress in your brouwser and you can change your credentials.
 
 ![Schematic](https://github.com/wytsem/Eetlijst-Indicator/blob/master/Schematic.png)
+
+![Final](https://github.com/wytsem/Eetlijst-Indicator/blob/master/Pictures/Inside.jpg)
+
+
 
 ## Troubleshooting
 
