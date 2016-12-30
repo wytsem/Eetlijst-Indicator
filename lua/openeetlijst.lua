@@ -42,17 +42,17 @@ if index ~= nil then
 
 		check = string.find(state,"kook")
 		if check ~= nil then
-			RGB = RGB.. string.char(70, 0, 0)
+			RGB = RGB.. string.char(255, 0, 0)
 		else
 			check = string.find(state,"eet")
 			if check ~= nil then
-				RGB = RGB.. string.char(0, 50, 0)
+				RGB = RGB.. string.char(0, 255, 0)
 			end
 		end
 
 		check = string.find(state,"nop")
 		if check ~= nil then
-			RGB = RGB.. string.char(0, 0, 10)
+			RGB = RGB.. string.char(0, 0, 127)
 		end
 
 		if state == '' then
